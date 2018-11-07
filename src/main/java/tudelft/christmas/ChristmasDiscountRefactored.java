@@ -2,7 +2,7 @@ package tudelft.christmas;
 
 import java.util.Calendar;
 
-public class ChristmasDiscountRefactored {
+class ChristmasDiscountRefactored {
 
     private Clock clock;
 

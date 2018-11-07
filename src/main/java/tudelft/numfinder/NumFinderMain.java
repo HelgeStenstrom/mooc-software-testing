@@ -1,6 +1,6 @@
 package tudelft.numfinder;
 
-public class NumFinderMain {
+class NumFinderMain {
 
     public static void main (String[] args) {
         NumFinder nf = new NumFinder();

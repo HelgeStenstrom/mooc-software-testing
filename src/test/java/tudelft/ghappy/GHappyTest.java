@@ -1,4 +1,4 @@
 package tudelft.ghappy;
 
-public class GHappyTest {
+class GHappyTest {
 }

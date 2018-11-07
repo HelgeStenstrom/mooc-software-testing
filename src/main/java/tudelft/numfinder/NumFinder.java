@@ -1,6 +1,6 @@
 package tudelft.numfinder;
 
-public class NumFinder {
+class NumFinder {
     private int smallest = Integer.MAX_VALUE;
     private int largest = Integer.MIN_VALUE;
 

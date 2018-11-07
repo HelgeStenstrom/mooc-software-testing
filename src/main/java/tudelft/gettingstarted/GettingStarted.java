@@ -1,6 +1,6 @@
 package tudelft.gettingstarted;
 
-public class GettingStarted {
+class GettingStarted {
     public int addFive (int number) {
         return number + 5;
     }

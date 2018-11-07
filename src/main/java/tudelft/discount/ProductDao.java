@@ -2,6 +2,6 @@ package tudelft.discount;
 
 import java.util.List;
 
-public interface ProductDao {
+interface ProductDao {
     List<Product> all();
 }

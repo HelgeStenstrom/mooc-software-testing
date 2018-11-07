@@ -7,10 +7,10 @@ import org.mockito.Mockito;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class ChristmasDiscountRefactoredTest {
+class ChristmasDiscountRefactoredTest {
 
     @Test
-    public void christmas() {
+    void christmas() {
         Clock clock = Mockito.mock(Clock.class);
         Calendar christmas = new GregorianCalendar(2015, Calendar.DECEMBER, 25);
 
@@ -22,7 +22,7 @@ public class ChristmasDiscountRefactoredTest {
     }
 
     @Test
-    public void notChristmas() {
+    void notChristmas() {
         Clock clock = Mockito.mock(Clock.class);
         Calendar christmas = new GregorianCalendar(2015, Calendar.JANUARY, 25);
 

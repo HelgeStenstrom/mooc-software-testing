@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-public class ChocolateBagsTest2 {
+class ChocolateBagsTest2 {
     @ParameterizedTest(name = "small={0}, big={1}, total={2}, result={3}")
     @CsvSource({
             // The total is higher than the amount of small and big bars.
@@ -17,8 +17,8 @@ public class ChocolateBagsTest2 {
             // Only small bars.
             "4,2,3,3", "3,2,3,3", "2,2,3,-1", "1,2,3,-1"
     })
-    public void testAlgorithm(int small, int big, int total, int expectedResult) {
-        int result = new ChocolateBags().calculate(small, big, total);
+    void testAlgorithm(int small, int big, int total, int expectedResult) {
+        int result = new ChocolateBags().calculateNeededOnes(small, big, total);
         Assertions.assertEquals(expectedResult, result);
     }
 

@@ -3,7 +3,7 @@ package tudelft.invoice;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InvoiceFilter {
+class InvoiceFilter {
 
     public List<Invoice> filter() {
 

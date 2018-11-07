@@ -3,7 +3,7 @@ package tudelft.roman;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RomanNumeral {
+class RomanNumeral {
 
     private static Map<Character, Integer> map;
 

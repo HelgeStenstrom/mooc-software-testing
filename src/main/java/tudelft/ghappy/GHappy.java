@@ -1,6 +1,6 @@
 package tudelft.ghappy;
 
-public class GHappy {
+class GHappy {
 
     public boolean gHappy(String str) {
         assert str!=null;

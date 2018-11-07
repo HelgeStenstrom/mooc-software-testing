@@ -1,6 +1,6 @@
 package tudelft.blackjack;
 
-public class BlackJack {
+class BlackJack {
 
     public int play(int left, int right) {
         int ln = left;

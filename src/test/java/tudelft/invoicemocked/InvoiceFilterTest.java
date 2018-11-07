@@ -7,7 +7,7 @@ import org.mockito.Mockito;
 import java.util.Arrays;
 import java.util.List;
 
-public class InvoiceFilterTest {
+class InvoiceFilterTest {
     @Test
     void filterInvoices() {
 

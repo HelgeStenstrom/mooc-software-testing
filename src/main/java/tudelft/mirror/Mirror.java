@@ -1,6 +1,6 @@
 package tudelft.mirror;
 
-public class Mirror {
+class Mirror {
 
     public String mirrorEnds(String string) {
         String mirror = "";

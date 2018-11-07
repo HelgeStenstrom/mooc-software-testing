@@ -1,6 +1,6 @@
 package tudelft.discount;
 
-public class DiscountApplier {
+class DiscountApplier {
 
     private ProductDao dao;
 

@@ -1,6 +1,6 @@
 package tudelft.discount;
 
-public class Product {
+class Product {
 
     private String name;
     private double price;

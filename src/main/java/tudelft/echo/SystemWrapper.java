@@ -1,6 +1,6 @@
 package tudelft.echo;
 
-public class SystemWrapper {
+class SystemWrapper {
 
     void print(String arg) {
         System.out.print(arg);

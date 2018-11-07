@@ -2,6 +2,6 @@ package tudelft.christmas;
 
 import java.util.Calendar;
 
-public interface Clock {
+interface Clock {
     Calendar now();
 }

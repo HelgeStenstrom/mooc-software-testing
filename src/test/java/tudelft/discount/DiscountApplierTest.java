@@ -1,5 +1,5 @@
 package tudelft.discount;
 
-public class DiscountApplierTest {
+class DiscountApplierTest {
 
 }

@@ -1,6 +1,6 @@
 package tudelft.invoice;
 
-public class Invoice {
+class Invoice {
 
     private String customer;
     private double value;

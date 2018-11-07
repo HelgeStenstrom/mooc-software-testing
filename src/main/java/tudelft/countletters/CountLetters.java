@@ -1,6 +1,6 @@
 package tudelft.countletters;
 
-public class CountLetters {
+class CountLetters {
 
     public int count(String str) {
         int words = 0;

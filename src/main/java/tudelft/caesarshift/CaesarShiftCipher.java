@@ -1,6 +1,6 @@
 package tudelft.caesarshift;
 
-public class CaesarShiftCipher {
+class CaesarShiftCipher {
 
     public String CaesarShiftCipher(String message, int shift){
         StringBuilder sb = new StringBuilder();

@@ -1,5 +1,5 @@
 package tudelft.caesarshift;
 
-public class CaesarShiftCipherTest {
+class CaesarShiftCipherTest {
 
 }

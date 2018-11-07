@@ -1,15 +1,14 @@
 package tudelft.chocolate;
 
-public class ChocolateBags {
+class ChocolateBags {
 
-    public int calculate(int small, int big, int total) {
-        int maxBigBoxes = total / 5;
-        int bigBoxesWeCanUse = maxBigBoxes < big ? maxBigBoxes : big;
-        total -= (bigBoxesWeCanUse * 5);
+    int calculateNeededOnes(int ones, int fives, int total) {
+        int maxFives = total / 5;
+        int fivesWeCanUse = fives <= maxFives ? fives : maxFives;
+        total -= fivesWeCanUse * 5;
 
-        if(small < total)
-            return -1;
-        return total;
+        final int failMarker = -1;
+        return (ones < total) ? failMarker : total;
 
     }
 

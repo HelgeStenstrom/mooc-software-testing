@@ -3,7 +3,7 @@ package tudelft.invoicemocked;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InvoiceFilter {
+class InvoiceFilter {
 
     private InvoiceDao dao;
 
