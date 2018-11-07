@@ -36,4 +36,15 @@ public class RomanNumeralTestWithBeforeEach {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    void expect(int expected, String string) {
+        int result = roman.convert(string);
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void manyTests() {
+        expect(4, "IIII");
+        expect( 5, "VI");
+    }
 }

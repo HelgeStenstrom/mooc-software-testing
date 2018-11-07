@@ -33,4 +33,23 @@ public class RomanNumeralTest {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void numberFourOnAWatch() {
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("IIII");
+        Assertions.assertEquals(4, result);
+    }
+
+    @Test
+    public void number3LowerCase() {
+        // Setup
+        RomanNumeral roman = new RomanNumeral();
+
+        // Exercise
+        int result = roman.convert("iii");
+
+        // Verify
+        Assertions.assertEquals(3, result);
+    }
 }
