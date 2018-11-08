@@ -24,7 +24,7 @@ class Mirror {
         String mirror = "";
         int begin = 0;
             int end =  string.length() -1; // (1)
-            for (; begin  < end; end--){ // (2)
+            for (; begin  < end; end--, begin++){ // (2)
                  if(string.charAt(begin) == string.charAt(end)){ // (3)
                 mirror += String.valueOf(string.charAt(end));
             }
