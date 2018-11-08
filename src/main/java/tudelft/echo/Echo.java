@@ -36,7 +36,7 @@ public class Echo {
     private SystemWrapper system = new SystemWrapper();
 
     @NotNull
-    public Echo process(@NotNull List<String> args) {
+    Echo process(@NotNull List<String> args) {
         // make private copy that supports removing (first) argument.
         ArrayList<String> operands = new ArrayList(args);
 
@@ -73,7 +73,7 @@ public class Echo {
         return this;
     }
 
-    public void echo(String[] args) {
+    void echo(String[] args) {
         process(Arrays.asList(args));
         system.print(output());
         system.exit(0);
@@ -85,7 +85,7 @@ public class Echo {
     }
 
     @NotNull
-    public String output() {
+    String output() {
         return result;
     }
 

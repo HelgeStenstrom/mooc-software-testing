@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GHappyTest {
 
-    GHappy gh = new GHappy();
+    private final GHappy gh = new GHappy();
 
     @ParameterizedTest
     @CsvSource({

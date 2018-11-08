@@ -5,7 +5,7 @@ import java.util.List;
 
 class InvoiceFilter {
 
-    private InvoiceDao dao;
+    private final InvoiceDao dao;
 
     public InvoiceFilter (InvoiceDao dao) {
         this.dao = dao;

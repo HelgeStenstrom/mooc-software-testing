@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 class MirrorTest {
 
-    Mirror mirror = new Mirror();
+    private final Mirror mirror = new Mirror();
 
     @ParameterizedTest
     @CsvSource({

@@ -5,7 +5,7 @@ import java.util.Map;
 
 class RomanNumeral {
 
-    private static Map<Character, Integer> map;
+    private static final Map<Character, Integer> map;
 
     static {
         map = new HashMap<Character, Integer>();
