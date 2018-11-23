@@ -3,18 +3,20 @@ package tudelft.invoice;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+
 import java.util.List;
+
 
 class InvoiceFilterTest {
     @Test
     void filterInvoices() {
 
-        InvoiceDao dao = new InvoiceDao();
         Invoice mauricio = new Invoice("Mauricio", 20.0);
         Invoice arie = new Invoice("Arie", 300.0);
 
-        dao.save(mauricio);
-        dao.save(arie);
+        InvoiceDao dao = new InvoiceDao();
+
+        dao.save(mauricio); dao.save(arie);
 
         InvoiceFilter filter = new InvoiceFilter();
         List<Invoice> result = filter.filter();

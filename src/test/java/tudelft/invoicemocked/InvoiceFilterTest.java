@@ -16,8 +16,7 @@ class InvoiceFilterTest {
 
         InvoiceDao dao = Mockito.mock(InvoiceDao.class);
 
-        List<Invoice> results = Arrays.asList(mauricio, arie);
-        Mockito.when(dao.all()).thenReturn(results);
+        Mockito.when(dao.all()).thenReturn(Arrays.asList(mauricio, arie));
 
         InvoiceFilter filter = new InvoiceFilter(dao);
         List<Invoice> result = filter.filter();
