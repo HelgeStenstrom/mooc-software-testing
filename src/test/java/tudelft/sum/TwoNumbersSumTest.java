@@ -18,7 +18,6 @@ class TwoNumbersSumTest {
         final ArrayList<Integer> n12 = new ArrayList<>(Arrays.asList(1, 2));
         final ArrayList<Integer> n24 = new ArrayList<>(Arrays.asList(2, 4));
         final ArrayList<Integer> n47 = new ArrayList<>(Arrays.asList(4, 7));
-        final ArrayList<Integer> n99 = new ArrayList<>(Arrays.asList(9, 7));
         final ArrayList<Integer> n59 = new ArrayList<>(Arrays.asList(5, 9));
 
         final TwoNumbersSum adder = new TwoNumbersSum();
@@ -59,7 +58,7 @@ class TwoNumbersSumTest {
 
     @ParameterizedTest
     @CsvSource({
-            "8, 9,  1, 1,   1, 0, 0",
+            "8, 9,  1, 3,   1, 0, 2",
     })
     void test3(int a1, int a2, int b1, int b2, int s1, int s2, int s3) {
         // Setup

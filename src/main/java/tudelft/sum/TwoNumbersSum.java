@@ -6,7 +6,10 @@ import java.util.Collections;
 // Source: https://leetcode.com/problems/add-two-numbers/description/
 class TwoNumbersSum {
 
-    public ArrayList<Integer> addTwoNumbers(ArrayList<Integer> first, ArrayList<Integer> second) {
+    public ArrayList<Integer> addTwoNumbers(final ArrayList<Integer> fst, final ArrayList<Integer> snd) {
+        ArrayList<Integer> first = new ArrayList<>(fst);
+        ArrayList<Integer> second = new ArrayList<>(snd);
+
         Collections.reverse(first);
         Collections.reverse(second);
 
@@ -24,6 +27,7 @@ class TwoNumbersSum {
             }
             result.add(i, total);
         }
+        if (complement > 0) result.add(1);
 
         Collections.reverse(result);
         return result;
